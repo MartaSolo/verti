@@ -1,0 +1,65 @@
+.main_content {
+  background: #fff;
+  padding: 0 2rem 1rem 2rem;
+  border-radius: 7px;
+  .card {
+    border: 1px solid black;
+    padding: 2rem;
+    text-align: center;
+    color: $color-text;
+    // @include tablet {
+    //   //*media query
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
+    h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+  }
+}
+
+.buttons {
+  a {
+    border: 1px solid green;
+    display: block;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    // @extend %flexRowCenter;
+    &.go {
+      background-color: $color-accent;
+      color: #fff;
+      &::before {
+        content: "\f0a9";
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.5rem;
+        margin: 0 0.5rem 0 0.5rem;
+      }
+    }
+    &.info {
+      background-color: $color-background;
+      color: $color-text;
+      &::before {
+        content: "\f059";
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.5rem;
+        margin: 0 0.5rem 0 0.5rem;
+      }
+    }
+  }
+}
+
+// dodac media dla róznych ekranów, czy spany potrzebne w html?
+
+//  jeszcze odstep wiekszy zrobić w desktop

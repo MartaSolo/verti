@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 3px solid green;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: $color-background;
+}
