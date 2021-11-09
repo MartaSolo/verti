@@ -1,0 +1,29 @@
+.articles {
+  width: 100%;
+  background: $color-background;
+  color: $color-text;
+  .container {
+    .row {
+      .article-1,
+      .article-2,
+      .article-3 {
+        border: 1px solid blue;
+        margin: 1rem 0;
+        .content {
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1.5;
+            margin-top: 1rem;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 2;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

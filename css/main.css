@@ -148,6 +148,7 @@ body h1 {
 }
 
 .container {
+  border: 3px solid green;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -316,7 +317,6 @@ header .logo h1 a {
   box-shadow: 0 2px 10px #444444;
 }
 .intro .main_content .card {
-  border: 1px solid black;
   padding: 2rem;
   text-align: center;
   color: #444444;
@@ -387,5 +387,33 @@ header .logo h1 a {
     font-size: 2rem;
     width: 330px;
   }
+}
+
+.articles {
+  width: 100%;
+  background: #e4e4e4;
+  color: #444444;
+}
+.articles .container .row .article-1,
+.articles .container .row .article-2,
+.articles .container .row .article-3 {
+  border: 1px solid blue;
+  margin: 1rem 0;
+}
+.articles .container .row .article-1 .content h3,
+.articles .container .row .article-2 .content h3,
+.articles .container .row .article-3 .content h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+.articles .container .row .article-1 .content p,
+.articles .container .row .article-2 .content p,
+.articles .container .row .article-3 .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
