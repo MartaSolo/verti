@@ -9,32 +9,30 @@ $max-width: 1200px;
 
 // Breakpoints:
 $sm: 576px;
-$md: 768px;
+$md: 992px;
 $lg: 1024px;
 
-// Media queries
-
-@mixin mobile {
-  @media (max-width: #{$sm}) {
-    @content;
-  }
+// Mixins
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+@mixin boxShadow {
+  box-shadow: 0 2px 10px $color-text;
+}
+
+//Media queries
+
 @mixin tablet {
-  @media (min-width: #{$md}) {
+  @media (min-width: #{$sm}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$lg}) {
+  @media (min-width: #{$md}) {
     @content;
   }
 }
-
-// // Placeholders
-// %flexRowCenter {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
