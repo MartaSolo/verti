@@ -14,6 +14,7 @@ $columns: 12;
       flex-direction: row-reverse;
       flex-wrap: wrap;
       margin: $defaultmargin;
+      //Mobile
       .col-8 {
         border: 1px solid red;
         flex-basis: 100%;
@@ -57,6 +58,7 @@ $columns: 12;
           }
         }
       }
+      //Mobile
       .col-4 {
         border: 1px solid blue;
         flex-basis: 100%;
@@ -71,7 +73,6 @@ $columns: 12;
           border: 1px solid yellow;
           display: flex;
           justify-content: space-between;
-          padding-bottom: 2rem;
           .photo {
             border: 1px solid brown;
             width: 48%;
@@ -93,6 +94,7 @@ $columns: 12;
         }
         .button {
           @include button;
+          margin-top: 2rem;
           &::before {
             content: "\f15c";
             font-family: "Font Awesome 5 Free";

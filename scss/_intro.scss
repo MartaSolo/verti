@@ -26,16 +26,7 @@
       padding: 1rem 0;
       a {
         @include button;
-        // display: block;
-        // padding: 1.3rem;
-        // font-size: 1.5rem;
-        // font-weight: 900;
-        // text-decoration: none;
-        // border-radius: 10px;
-        // @include flexCenter;
         &.go {
-          // background-color: $color-accent;
-          // color: #fff;
           margin-bottom: 1rem;
           &::before {
             content: "\f0a9";

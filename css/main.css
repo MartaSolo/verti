@@ -628,7 +628,6 @@ header .logo h1 a {
   border: 1px solid yellow;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
 }
 .about .container .row .col-4 .photos .photo {
   border: 1px solid brown;
@@ -661,6 +660,7 @@ header .logo h1 a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 .about .container .row .col-4 .button::before {
   content: "\f15c";

@@ -15,6 +15,7 @@ $columns: 12;
       display: flex;
       flex-wrap: wrap;
       margin: $defaultmargin;
+      //Mobile
       [class^="col-"] {
         border: 1px solid blue;
         min-height: 1px;
@@ -47,9 +48,11 @@ $columns: 12;
             }
           }
         }
+        //Tablet
         @include tablet {
           flex-basis: auto;
         }
+        //Desktop
         @include desktop {
           .article {
             .content {
