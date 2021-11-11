@@ -4,11 +4,11 @@
   .main_content {
     // Mobile
     background: #fff;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2rem;
     border-radius: 7px;
     @include boxShadow;
     .card {
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
       color: $color-text;
       h2 {
@@ -56,11 +56,14 @@
     // Tablet
     @include tablet {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
+      .card {
+        // padding: 2rem 1rem 2rem 1rem;
+      }
       .buttons {
         a {
-          width: 240px;
+          width: 220px;
           flex-direction: row-reverse;
           justify-content: space-between;
         }
@@ -68,17 +71,19 @@
     }
     // Desktop
     @include desktop {
+      justify-content: space-around;
+
       .card {
         h2 {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
         p {
-          font-size: 2.8rem;
+          font-size: 2.3rem;
         }
       }
       .buttons {
         a {
-          font-size: 2rem;
+          font-size: 1.8rem;
           width: 330px;
         }
       }

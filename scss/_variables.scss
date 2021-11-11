@@ -8,8 +8,12 @@ $color-accent: #1691c3;
 $max-width: 1200px;
 
 // Breakpoints:
-$sm: 576px;
-$md: 992px;
+$md: 768px;
+$lg: 1024px;
+
+// Margin and padding
+$defaultmargin: 0.5rem;
+$gutters: 0.5rem;
 
 // Mixins
 @mixin flexCenter {
@@ -25,13 +29,13 @@ $md: 992px;
 //Media queries
 
 @mixin tablet {
-  @media (min-width: #{$sm}) {
+  @media (min-width: #{$md}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$md}) {
+  @media (min-width: #{$lg}) {
     @content;
   }
 }

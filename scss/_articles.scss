@@ -1,26 +1,66 @@
+$columns: 12;
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: 100% / $columns * $i;
+  }
+}
+
 .articles {
   width: 100%;
   background: $color-background;
   color: $color-text;
   .container {
+    padding: 0;
     .row {
-      .article-1,
-      .article-2,
-      .article-3 {
+      display: flex;
+      flex-wrap: wrap;
+      margin: $defaultmargin;
+      [class^="col-"] {
         border: 1px solid blue;
-        margin: 1rem 0;
-        .content {
-          h3 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            line-height: 1.5;
-            margin-top: 1rem;
+        min-height: 1px;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        .article {
+          border: 1px solid red;
+          flex-grow: 1;
+          background: #fff;
+          border-radius: 10px;
+          margin: 0.5rem;
+          img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
           }
-          p {
-            font-size: 1rem;
-            font-weight: 300;
-            line-height: 2;
-            margin-bottom: 1rem;
+          .content {
+            padding: 0 2rem;
+            h3 {
+              font-size: 1.8rem;
+              font-weight: 800;
+              line-height: 1.5;
+              margin-top: 1rem;
+            }
+            p {
+              font-size: 1rem;
+              font-weight: 300;
+              line-height: 2;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        @include tablet {
+          flex-basis: auto;
+        }
+        @include desktop {
+          .article {
+            .content {
+              h3 {
+                font-size: 2rem;
+              }
+              p {
+                font-size: 1.2rem;
+              }
+            }
           }
         }
       }
