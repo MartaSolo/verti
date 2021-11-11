@@ -1,0 +1,12 @@
+// General button styling
+@mixin button {
+  display: block;
+  padding: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: $color-accent;
+  color: #fff;
+  @include flexCenter;
+}
