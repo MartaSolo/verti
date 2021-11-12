@@ -1,25 +1,28 @@
 // Logo
 header {
-  background: $color-background;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid blue;
-  .logo {
-    border: 1px solid red;
-    // align-self: center;
-    h1 {
-      a {
-        display: inline-block;
-        text-decoration: none;
-        font-family: "Oleo Script", cursive;
-        letter-spacing: 3px;
-        font-size: 3rem;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-        border-radius: 10px;
-        color: #fff;
-        background: $color-logo;
-        text-align: center;
+  .container {
+    background: $color-background;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    .logo {
+      border: 1px solid red;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      h1 {
+        a {
+          display: inline-block;
+          text-decoration: none;
+          font-family: "Oleo Script", cursive;
+          letter-spacing: 3px;
+          font-size: 3rem;
+          padding: 0.5rem 1rem 0.5rem 1rem;
+          border-radius: 10px;
+          color: #fff;
+          background: $color-logo;
+          text-align: center;
+        }
       }
     }
   }
@@ -28,7 +31,7 @@ header {
 // Menu (https://codepen.io/mutedblues/pen/MmPNPG)
 
 .header {
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  // box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   // position: fixed;
   width: 100%;
   // max-width: $max-width;

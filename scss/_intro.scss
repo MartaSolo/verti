@@ -8,16 +8,16 @@
     border-radius: 7px;
     @include boxShadow;
     .card {
-      padding: 2rem 1rem;
+      padding: 1rem 1rem 2rem 1rem;
       text-align: center;
       color: $color-text;
       h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 900;
-        margin: 1rem 0;
+        margin: 2rem 0;
       }
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.5;
         font-weight: 300;
       }
@@ -50,9 +50,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .card {
+        text-align: left;
+        h2 {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 2.4rem;
+        }
+      }
       .buttons {
         a {
           width: 220px;
+          font-size: 1.6rem;
           flex-direction: row-reverse;
           justify-content: space-between;
         }
@@ -63,15 +73,15 @@
       justify-content: space-around;
       .card {
         h2 {
-          font-size: 2.5rem;
+          font-size: 3.3rem;
         }
         p {
-          font-size: 2.3rem;
+          font-size: 2.7rem;
         }
       }
       .buttons {
         a {
-          font-size: 1.8rem;
+          font-size: 1.9rem;
           width: 330px;
         }
       }

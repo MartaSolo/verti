@@ -1,11 +1,3 @@
-$columns: 12;
-
-@for $i from 1 through $columns {
-  .col-#{$i} {
-    width: 100% / $columns * $i;
-  }
-}
-
 .articles {
   width: 100%;
   background: $color-background;
@@ -14,7 +6,7 @@ $columns: 12;
     .row {
       display: flex;
       flex-wrap: wrap;
-      margin: $defaultmargin;
+      margin: $defaultmargin 0;
       //Mobile
       [class^="col-"] {
         border: 1px solid blue;
@@ -28,12 +20,13 @@ $columns: 12;
           background: #fff;
           border-radius: 10px;
           margin: 0.5rem;
+          @include boxShadow;
           img {
             width: 100%;
             border-radius: 10px 10px 0 0;
           }
           .content {
-            padding: 0 2rem;
+            padding: 0 1.5rem;
             h3 {
               font-size: 1.5rem;
               font-weight: 800;
@@ -41,7 +34,7 @@ $columns: 12;
               margin-top: 1rem;
             }
             p {
-              font-size: 1rem;
+              font-size: 1.2rem;
               font-weight: 300;
               line-height: 2;
               margin-bottom: 1rem;
@@ -60,7 +53,7 @@ $columns: 12;
                 font-size: 1.7rem;
               }
               p {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
               }
             }
           }
