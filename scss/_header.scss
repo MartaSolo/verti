@@ -1,15 +1,17 @@
 // Logo
-header {
+.header {
+  height: 90px;
+  background: $color-background;
   .container {
-    background: $color-background;
+    position: relative;
+    height: inherit;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     .logo {
-      border: 1px solid red;
-      // position: absolute;
-      // top: 50%;
-      // left: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       h1 {
         a {
           display: inline-block;
@@ -17,12 +19,17 @@ header {
           font-family: "Oleo Script", cursive;
           letter-spacing: 3px;
           font-size: 3rem;
-          padding: 0.5rem 1rem 0.5rem 1rem;
+          padding: 0.5rem;
           border-radius: 10px;
           color: #fff;
           background: $color-logo;
           text-align: center;
         }
+      }
+      @include tablet {
+        left: 0;
+        transform: translate(0, -50%);
+        padding-left: 0.5rem;
       }
     }
   }
@@ -48,22 +55,15 @@ header {
 
 .header li a {
   display: block;
+  color: $color-text;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  // border-bottom: 1px solid $color-border;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: #f4f4f4;
-}
-
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
 }
 
 /* menu */
@@ -79,7 +79,7 @@ header {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  float: left;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -140,21 +140,29 @@ header {
   top: 0;
 }
 
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
+// Tablet
+.header {
+  @include tablet {
+    .menu-icon {
+      display: none;
+    }
+    .menu {
+      transform: translateY(15%);
+      clear: none;
+      float: right;
+      max-height: none;
+      background-color: $color-background;
+      li {
+        float: left;
+        a {
+          font-size: 1.5rem;
+          padding: 20px 30px;
+          background-color: $color-background;
+          &:hover {
+            font-weight: 800;
+          }
+        }
+      }
+    }
   }
 }

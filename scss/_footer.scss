@@ -7,7 +7,6 @@
     // Mobile
     [class^="col-"] {
       flex-basis: 100%;
-      border: 1px solid red;
       border-bottom: 1px solid $color-border;
       padding: 2.5rem 0.5rem 3rem 0.5rem;
       h3 {
@@ -48,13 +47,14 @@
       //Tablet
       @include tablet {
         flex-basis: auto;
+        border-bottom: none;
         a,
         p {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
         }
         .address {
           p {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
         }
         .icons {
@@ -70,11 +70,11 @@
       @include desktop {
         a,
         p {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
         .address {
           p {
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
         }
         .icons {
@@ -90,7 +90,6 @@
   }
 }
 .copyright {
-  border: 1px solid green;
   font-size: 1.2rem;
   color: $color-border;
   margin: $defaultmargin;
@@ -101,7 +100,7 @@
   }
   // Tablet
   @include tablet {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     .menu {
       display: flex;
       justify-content: center;
@@ -116,6 +115,6 @@
   }
   //Desktop
   @include desktop {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

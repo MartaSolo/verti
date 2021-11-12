@@ -1,6 +1,6 @@
 .articles {
   width: 100%;
-  background: $color-background;
+  // background: $color-background;
   .container {
     padding: 0;
     .row {
@@ -9,13 +9,11 @@
       margin: $defaultmargin 0;
       //Mobile
       [class^="col-"] {
-        border: 1px solid blue;
         min-height: 1px;
         flex-basis: 100%;
         display: flex;
         flex-direction: column;
         .article {
-          border: 1px solid red;
           flex-grow: 1;
           background: #fff;
           border-radius: 10px;
